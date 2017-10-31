@@ -35,9 +35,16 @@ aside#social-links {
 	margin-bottom: 4rem;
 }
 
-figure {
+.content-box figure {
 	position: relative;
 	height: 100%;
+	width: 100%;
+}
+
+.content-box figure div {
+	position: inherit;
+	width: inherit;
+	height: inherit;
 	overflow: hidden;
 }
 
@@ -71,22 +78,9 @@ figcaption {
 	background-color: #666;
 }
 
-#para-fig {
-	width: 45%;
-}
-
-.img-frame {
+article#about>div.row img {
 	padding: 0;
-}
-
-.img-gallery {
-	height: 16rem;
-	margin-bottom: 24px;
-}
-
-.img-gallery>div img {
-	min-height: 100%;
-	width: 100%;
+	margin-bottom: 2rem;
 }
 
 article#about>div.row img+p {
@@ -189,15 +183,74 @@ h3.page-header {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.content-box {
 		height: 18rem;
 		margin-bottom: 2rem;
 	}
 
-	.content-box figure img.img-reponsive {
-		position: relative;
+	.content-box>figure>div {
+		text-align: center;
+	}
+
+	.content-box>figure>div>img {
+		margin: 0 auto;
 		height: 100%;
-		width: auto;
+		min-width: 100%;
+		max-width: initial;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		padding-top: 0;
+	}
+	
+	.container, .row {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.navbar-header, .navbar-header>a {
+		width: 100%;
+		text-align: center;
+		margin-left: 15px;
+	}
+
+	.navbar-fixed-top {
+		position: relative;
+	}
+
+	#nav-links>ul {
+		text-align: center;
+		height: 72px;
+		margin: 0;
+	}
+
+	#nav-links>ul>li {
+		display: inline-block;
+		width: 30%;
+	}
+
+	#nav-links>ul>li>a {
+		margin: 15px 0;
+		line-height: 42px;
+	}
+
+	.social-icon {
+		width: 20%;
+		margin-right: 1%;
+	}
+}
+
+@media (max-width: 480px) {
+	#para-fig {
+		width: 100%;
+	}
+
+	#para-fig+p {
+		clear: both;
 	}
 }
