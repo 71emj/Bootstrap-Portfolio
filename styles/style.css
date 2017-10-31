@@ -32,19 +32,13 @@ aside#social-links {
 }
 
 .content-box {
-	height: 18rem;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 figure {
 	position: relative;
 	height: 100%;
 	overflow: hidden;
-}
-
-.content-box figure img.img-reponsive {
-	height: 100%;
-	width: auto;
 }
 
 figcaption {
@@ -54,7 +48,7 @@ figcaption {
 	padding: 1.25rem 15px;
 	color: #fff;
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 1.5rem;
+	font-size: 16px;
 	font-weight: initial;
 	text-transform: capitalize;
 	text-align: center;
@@ -62,8 +56,6 @@ figcaption {
 	background: #4aaaa5;
 	z-index: 1;
 }
-
-
 
 .box-shadow {
 	box-shadow: 1px 0px 12px rgba(0, 0, 0, 0.3);
@@ -112,10 +104,6 @@ article#about>div.row img+p {
 .social-icon:last-child {
 	margin-right: 0;
 }
-
-
-
-
 
 /* override undesired rules */
 
@@ -198,5 +186,18 @@ h3.page-header {
 @media (min-width: 1200px) {
 	.container {
 		width: 970px;
+	}
+}
+
+@media (min-width: 768px) {
+	.content-box {
+		height: 18rem;
+		margin-bottom: 2rem;
+	}
+
+	.content-box figure img.img-reponsive {
+		position: relative;
+		height: 100%;
+		width: auto;
 	}
 }
