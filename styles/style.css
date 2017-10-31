@@ -31,21 +31,39 @@ aside#social-links {
 	background: #fff;
 }
 
-figcaption {
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-    padding: 1.25rem 15px;
-    color: #fff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 1.5rem;
-    font-weight: initial;
-    text-transform: capitalize;
-    text-align: center;
-    box-sizing: border-box !important;
-    background: #4aaaa5;
-    z-index: 1;
+.content-box {
+	height: 18rem;
+	margin-bottom: 2rem;
 }
+
+figure {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.content-box figure img.img-reponsive {
+	height: 100%;
+	width: auto;
+}
+
+figcaption {
+	position: absolute;
+	bottom: 1rem;
+	width: 100%;
+	padding: 1.25rem 15px;
+	color: #fff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 1.5rem;
+	font-weight: initial;
+	text-transform: capitalize;
+	text-align: center;
+	box-sizing: border-box !important;
+	background: #4aaaa5;
+	z-index: 1;
+}
+
+
 
 .box-shadow {
 	box-shadow: 1px 0px 12px rgba(0, 0, 0, 0.3);
@@ -94,6 +112,10 @@ article#about>div.row img+p {
 .social-icon:last-child {
 	margin-right: 0;
 }
+
+
+
+
 
 /* override undesired rules */
 
@@ -145,19 +167,19 @@ ul.navbar-nav>li:last-child>a {
 	border-right: 0px solid transparent;
 }
 
-h1.page-header, h2.page-header {
+h1.page-header,
+h2.page-header {
 	padding-bottom: 24px;
-	border-bottom: 2px solid #ddd;	
+	border-bottom: 2px solid #ddd;
 }
 
 h3.page-header {
 	padding-bottom: 18px;
-	border-bottom: 1px solid #ddd;	
+	border-bottom: 1px solid #ddd;
 }
 
 .navbar-default {
 	background: #fff;
-
 }
 
 .pull-left {
